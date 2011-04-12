@@ -23,7 +23,7 @@ end
 t = FactorialTest.new()  
 
 Benchmark.bm do |x|   
-  x.report(":factorial_ruby"){ t.factorial_ruby(50000) }   
-  x.report(":factorial_c"){ t.factorial_c(50000) } 
+  x.report(":factorial_ruby"){ t.factorial_ruby(40000) }   
+  x.report(":factorial_c"){ t.factorial_c(40000) }
 end 
 
