@@ -1,0 +1,38 @@
+==Goal: Learn and Explore Benchmarking!
+
+=Week 2: Fun with benchmarks and ruby speed!!
+
+Task: This week is about learning how ot benchmark your code and explore how ruby versions speeds differ.
+
+  1)  git clone git@github.com:Tukaiz/tukaiz_dojo_2.git
+  2)  gem install benchmark and inline  *if you dont already have it*
+  3)  ruby factorial.rb then if you want ruby super_fast_factorial.rb
+  4)  find and compare everyones factorial methods and how fast they executed.
+  5)  use rvm *if you can and have it installed* compare Ruby 1.8.7 vs Ruby 1.9.2 you will see a difference in speed
+
+Things to think about/discuss:
+  Notice that everyone had pretty much there "own" way to impliment the factorial. 
+  
+  Remember: This is a GOOD thing! Codeing should be more of an Art/Craft than a difinitive thing we do. 
+            You can make the argument that yea speed is important and yes there is in many cases a "right" and "wrong" way to do something. 
+    
+  Take are little example and answer these questions. 
+    Is the most clear and readable the fastest? 
+    Is what you thought would be the fastest is? 
+    Does changing the version of Ruby change the order of whos the fastes?
+
+  There are endless ways to compare and contrast code and not one way is correct all the time.
+
+  Just things that hopefully make you think differently about how you approached this problem.
+
+  I really found it cool to see how everyone solved this. 
+
+  For me I was very impressed with people who added checks for vaild Integers, people who used "real" recursion and how readable and easy to follow some of your code was!
+
+  Thanks to everyone who participated!
+
+References:
+  https://rvm.beginrescueend.com/
+  http://www.ensta-paristech.fr/~diam/ruby/online/ruby-doc-stdlib/libdoc/benchmark/rdoc/index.html
+  http://www.zenspider.com/ZSS/Products/RubyInline/
+  http://programmingzen.com/2010/07/19/the-great-ruby-shootout-july-2010/
