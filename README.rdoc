@@ -29,7 +29,7 @@ Things to think about/discuss:
  For me I was very impressed with people who added checks for valid Integers.
  People who used "real" recursion and how readable and easy to follow some of your code was!
 
-=Thanks to everyone who participated!
+=Thanks to everyone who participated last week!
 
 References:
  https://rvm.beginrescueend.com/
