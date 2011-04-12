@@ -47,12 +47,6 @@ class FactorialTest
     result
   end
 
-  def factor_me_2917(n)
-    return 1 if n == 0
-    raise StandardError, "Number must be positive" if n < 0
-    (1..n).inject{|num,next_num| num * next_num } 
-   end
-
   def factorial_4922(n)
     result = 1
     n.downto(1) { |i|
@@ -122,8 +116,15 @@ class FactorialTest
     end
     array.reverse!
     eval array.join(" * ")
-  end
-  
+  end 
+end
+
+class Integer
+  def factor_me_2917
+    return 1 if self == 0
+    raise StandardError, "Number must be positive" if self < 0
+    (1..self).inject{|num,next_num| num * next_num }
+   end
 end
 
 t = FactorialTest.new()
@@ -134,11 +135,8 @@ Benchmark.bm do |x|
   x.report(":factorial_4819"){ FactorialTest.factorial_4819(6584) }
   x.report(":factorial_6912"){ FactorialTest.factorial_6912(6584) }
 
-  x.report(":factorial_4962_a"){ t.factorial_4962_a(6584) }
-  x.report(":factorial_4962_b"){ t.factorial_4962_b(6584) }
   x.report(":factorial_4837"){ t.factorial_4837(6584) }
   x.report(":factorial_6918"){ t.factorial_6918(6584) }
-  x.report(":factor_me_2917"){ t.factor_me_2917(6584) }
   x.report(":factorial_4922"){ t.factorial_4922(6584) }
   x.report(":factorial_4924"){ t.factorial_4924(6584) }
   x.report(":factorial_4962_a"){ t.factorial_4962_a(6584) }
@@ -146,21 +144,19 @@ Benchmark.bm do |x|
   x.report(":factorial_4820"){ t.factorial_4820(6584) }
   x.report(":factorial_6917"){ t.factorial_6917(6584) }
   x.report(":factorial_4923_consise"){ t.factorial_4923_consise(6584) }
+  x.report(":factor_me_2917"){ 6584.factor_me_2917 }
 
   puts "Round Two Factorial of 40000!"
 
-  x.report(":factorial_4962_a"){ t.factorial_4962_a(40000) }
-  x.report(":factorial_4962_b"){ t.factorial_4962_b(40000) }
   x.report(":factorial_4837"){ t.factorial_4837(40000) }
   x.report(":factorial_6918"){ t.factorial_6918(40000) }
-  x.report(":factor_me_2917"){ t.factor_me_2917(40000) }
   x.report(":factorial_4922"){ t.factorial_4922(40000) }
   x.report(":factorial_4924"){ t.factorial_4924(40000) }
   x.report(":factorial_4962_a"){ t.factorial_4962_a(40000) }
-  x.report(":factorial_4962_b"){ t.factorial_4962_b(40000) }
+  # x.report(":factorial_4962_b"){ t.factorial_4962_b(40000) }
   x.report(":factorial_4820"){ t.factorial_4820(40000) }
   x.report(":factorial_6917"){ t.factorial_6917(40000) }
   x.report(":factorial_4923_consise"){ t.factorial_4923_consise(40000) }
-
+  x.report(":factor_me_2917"){ 40000.factor_me_2917 }
 end
 
