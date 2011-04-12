@@ -4,7 +4,7 @@
 
 Task: This week is about learning how ot benchmark your code and explore how ruby versions speeds differ.
 
-  1)  git clone git@github.com:Tukaiz/tukaiz_dojo_2.git
+  1)  git clone git@github.com:Tukaiz/dojo_2.git
   2)  gem install benchmark and inline  *if you dont already have it*
   3)  ruby factorial.rb then if you want ruby super_fast_factorial.rb
   4)  find and compare everyones factorial methods and how fast they executed.
@@ -13,8 +13,7 @@ Task: This week is about learning how ot benchmark your code and explore how rub
 Things to think about/discuss:
   Notice that everyone had pretty much there "own" way to impliment the factorial. 
   
-  Remember: This is a GOOD thing! Codeing should be more of an Art/Craft than a difinitive thing we do. 
-            You can make the argument that yea speed is important and yes there is in many cases a "right" and "wrong" way to do something. 
+  Remember: This is a GOOD thing! Codeing should be more of an Art/Craft than a difinitive thing we do. You can make the argument that yea speed is important and yes there is in many cases a "right" and "wrong" way to do something. 
     
   Take are little example and answer these questions. 
     Is the most clear and readable the fastest? 
