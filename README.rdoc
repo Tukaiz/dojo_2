@@ -14,7 +14,6 @@ Things to think about/discuss:
   Notice that everyone had pretty much there "own" way to impliment the factorial. 
   
   Remember: This is a GOOD thing! Codeing should be more of an Art/Craft than a difinitive thing we do. 
-            You can make the argument that yea speed is important and yes there is in many cases a "right" and "wrong" way to do something. 
     
   Take are little example and answer these questions. 
     Is the most clear and readable the fastest? 
@@ -27,9 +26,10 @@ Things to think about/discuss:
 
   I really found it cool to see how everyone solved this. 
 
-  For me I was very impressed with people who added checks for vaild Integers, people who used "real" recursion and how readable and easy to follow some of your code was!
+  For me I was very impressed with people who added checks for vaild Integers.
+  People who used "real" recursion and how readable and easy to follow some of your code was!
 
-  Thanks to everyone who participated!
+=Thanks to everyone who participated!
 
 References:
   https://rvm.beginrescueend.com/
